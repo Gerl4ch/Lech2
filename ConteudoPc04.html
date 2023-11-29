@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title> GAMERS.com </title>
+<style>
+body {background-color: lightgrey;}
+h2   {color: black;}
+h1   {color: black;}
+a:link {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: hsl(0, 0%, 60%);";
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727070; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: 2px solid #000; /* Borda preta */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: absolute;
+    left: 873px;
+    top: 686px;
+}
+
+/* Estilo de hover (quando o mouse passa por cima) */
+.botao:hover {
+    background-color: rgba(14, 13, 13, 0.452); /* Altera a cor de fundo no hover */
+}
+</style>
+<body>
+  <iframe src="CabecalhoGame.html" style="border:none;" name="Cabecalho" height="350px" width="100%" title="Iframe Example"></iframe>
+	<table style="width:100%">
+			<td>
+	<h1>PC Gamer Neologic AMD Ryzen 5 5500, RAM 16GB, RTX 3060 12GB, SSD 1TB M.2 600w, Windows 11
+  </h1>
+</td>
+</table>
+</table>
+<table style="width:100%">
+  <tr>
+    <td>
+  <img src="Pc04.jpg" alt="pc01" style="width:550px;height:500px;">
+  <th><h1>R$4.681,84</h1>
+    <h3>A vista no pix com até 9% off<br>
+      R$5.144,88<br>
+      Em até 10x de R$514,48 sem juros no cartão</h3><br>
+      <div align="center">
+        <strong>R$4.681,84</strong><br>
+       qtd: <input type="number" value="1" min="1" max="10" id="qtd4">
+       <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('PC Gamer Neologic', document.getElementById('qtd4').value, '4681.84', 4)"> Comprar </button>
+     </div>
+     <p align="center">
+       <a href="carrinho.html"> Ver Carrinho de compras </a>
+     </p>	
+    <h2>Exclusivo neologic: busque a vitória!<br>
+A linha de pcs gamer neologic alia produtos de alta qualidade com muita inovação e preços incríveis, e foi feita para usuários que querem o melhor custo-benefício e a tecnologia mais atual. Contando com a qualidade inigualável dos nossos parceiros, essa maquina vai proporcionar uma experiência fantástica dentro e fora dos games. Uma pedida ideal para quem quer o melhor!
+</h2>
+  </th>
+</td>
+</tr>
+</table>
+<table style="width:100%">
+  <tr>
+  <h1>Informações Técnicas</h1>
+  <h3><pre>Características:
+
+- Marca: Neologic
+
+
+
+Especificações:
+
+
+
+Processador:  
+
+- Amd Ryzen 5 5500, 3.6ghz (4.2ghz Max Turbo), Cache 19mb, Am4 
+
+  
+
+Placa Mãe:  
+
+- A520m Am4 
+
+  
+
+Placa de Vídeo:  
+
+- Geforce Rtx 3060, 12gb Gddr6 
+
+  
+
+Saida Hdmi: Sim 
+
+  
+
+Memória :   
+
+- 8gb Ddr4 Neologic 3200mhz 
+
+  
+
+Ssd:  
+
+- 1tb M.2 Nvme 
+
+  
+
+Gabinete:  
+
+- Exclusivo Neologic (imagens Ilustrativas, Coolers Fans Não Incluso) 
+
+  
+
+Gravador de Dvd/cd: Não Acompanha 
+
+  
+
+Tipo de Pc: Gamer 
+
+  
+
+Fonte:  
+
+- 600w 80 Plus 
+
+  
+
+Voltagem: Bivolt 110v - 220v 
+
+  
+
+Sistema Operacional:   
+
+- Windows 11 64 Bits - 30 Dias 
+
+
+
+Conteúdo da embalagem:
+
+
+
+  1 Computador Neologic 
+
+ 
+
+Garantia do Fornecedor
+
+3 Meses
+
+
+Peso:
+8000 gramas (bruto com embalagem)</pre></h3>
+</table>
+<iframe src="RodapeGame.html" style="border:none;" name="Rodape" height="360px" width="100%" title="Iframe Example"></iframe>
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
+</html>

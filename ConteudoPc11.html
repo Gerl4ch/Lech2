@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title> GAMERS.com </title>
+<style>
+body {background-color: lightgrey;}
+h2   {color: black;}
+h1   {color: black;}
+a:link {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: hsl(0, 0%, 60%);";
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727070; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: 2px solid #000; /* Borda preta */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: absolute;
+    left: 875px;
+    top: 675px;
+}
+
+/* Estilo de hover (quando o mouse passa por cima) */
+.botao:hover {
+    background-color: rgba(14, 13, 13, 0.452); /* Altera a cor de fundo no hover */
+}
+</style>
+<body>
+  <iframe src="CabecalhoGame.html" style="border:none;" name="Cabecalho" height="350px" width="100%" title="Iframe Example"></iframe>
+	<table style="width:100%">
+			<td>
+	<h1>PC Gamer ITX Arena Setup Powered By Asus, I5 10400F, Asus GTX 1650 4GB, 16GB, SSD 480GB.
+  </h1>
+</td>
+</table>
+</table>
+<table style="width:100%">
+  <tr>
+    <td>
+  <img src="Pc11.jpg" alt="pc11" style="width:550px;height:500px;">
+  <th><h1>R$3.699,00</h1>
+    <h3>A vista no pix com até 15% off<br>
+      Em até 10x de R$369,90 sem juros no cartão</h3><br>
+      <div align="center">
+        <strong>R$3.699,00</strong><br>
+       qtd: <input type="number" value="1" min="1" max="10" id="qtd11">
+       <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('PC Gamer ITX Arena', document.getElementById('qtd11').value, '3699.00', 11)"> Comprar </button>
+     </div>
+     <p align="center">
+       <a href="carrinho.html"> Ver Carrinho de compras </a>
+     </p>	
+    <h2>Exclusivo Amazon: busque a vitória!<br>
+A linha de pcs gamer Amazon são produtos de alta qualidade com muita inovação e preços incríveis, e foi feita para usuários que querem o melhor custo-benefício e a tecnologia mais atual. Contando com a qualidade inigualável dos nossos parceiros, essa maquina vai proporcionar uma experiência fantástica dentro e fora dos games. Uma pedida ideal para quem quer o melhor!
+</h2>
+  </th>
+</td>
+</tr>
+</table>
+<table style="width:100%">
+  <tr>
+  <h1>Informações Técnicas</h1>
+  <h3><pre>
+Características:
+
+- Marca: ITX Arena
+
+
+
+Especificações:
+
+
+
+Processador:  
+
+- Intel I5 10400F‎ 2,9 GHz (4.30GHz Turbo)
+
+  
+
+Placa Mãe:  
+
+- Intel H510M
+
+  
+
+Placa de Vídeo:  
+
+- Asus GTX 1650 4GB GDDR6
+
+  
+
+Saida Hdmi: Sim 
+
+  
+
+Memória :   
+
+- 2x Memórias Gamer 8GB, (2x8GB) 3000MHz, DDR4
+
+  
+
+Ssd:  
+
+- SSD SATA III, 480GB
+
+  
+
+Gabinete:  
+
+- GABINETE GAMER GB1710, LATERAL VIDRO TEMPERADO, 3X FANS, SEM FONTE, ATX, PRETO
+
+  
+  
+
+Tipo de Pc: Gamer 
+
+  
+
+Fonte:  
+
+- FONTE 500W 80 Plus PFC Ativo, Bivolt Automático
+ 
+
+  
+
+Sistema Operacional:   
+
+- Windows 10 64 Bits
+
+ 
+
+Garantia do Fornecedor:
+
+- A garantia é por peça, o prazo será indicado na nota fiscal.
+  Os computadores não acompanham lacre, portanto poderá abrir seu gabinete e modificar da forma que desejar.
+</pre></h3>
+</table>
+<iframe src="RodapeGame.html" style="border:none;" name="Rodape" height="360px" width="100%" title="Iframe Example"></iframe>
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
+</html>

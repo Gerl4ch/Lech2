@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title> GAMERS.com </title>
+<style>
+body {background-color: lightgrey;}
+h2   {color: black;}
+h1   {color: black;}
+a:link {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: hsl(0, 0%, 60%);";
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727070; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: 2px solid #000; /* Borda preta */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: absolute;
+    left: 875px;
+    top: 650px;
+}
+
+/* Estilo de hover (quando o mouse passa por cima) */
+.botao:hover {
+    background-color: rgba(14, 13, 13, 0.452); /* Altera a cor de fundo no hover */
+}
+</style>
+<body>
+  <iframe src="CabecalhoGame.html" style="border:none;" name="Cabecalho" height="350px" width="100%" title="Iframe Example"></iframe>
+	<table style="width:100%">
+			<td>
+	<h1>PC Gamer AMD Ryzen 5 5500 16GB (RTX 3060 12GB) SSD 240GB 600W, Neologic.
+  </h1>
+</td>
+</table>
+</table>
+<table style="width:100%">
+  <tr>
+    <td>
+  <img src="Pc08.png" alt="pc08" style="width:550px;height:500px;">
+  <th><h1>R$4.009,90</h1>
+    <h3>A vista no pix com até 12% off<br>
+      R$5.221,18<br>
+      Em até 10x de R$455,67 no cartão</h3><br>
+      <div align="center">
+        <strong>R$4.009,90</strong><br>
+       qtd: <input type="number" value="1" min="1" max="10" id="qtd8">
+       <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('PC Gamer AMD', document.getElementById('qtd8').value, '4009.90', 8)"> Comprar </button>
+     </div>
+     <p align="center">
+       <a href="carrinho.html"> Ver Carrinho de compras </a>
+     </p>	
+    <h2>Exclusivo ShopInfo: busque a vitória!<br>
+A linha de pcs gamer ShopInfo são produtos de alta qualidade com muita inovação e preços incríveis, e foi feita para usuários que querem o melhor custo-benefício e a tecnologia mais atual. Contando com a qualidade inigualável dos nossos parceiros, essa maquina vai proporcionar uma experiência fantástica dentro e fora dos games. Uma pedida ideal para quem quer o melhor!
+</h2>
+  </th>
+</td>
+</tr>
+</table>
+<table style="width:100%">
+  <tr>
+  <h1>Informações Técnicas</h1>
+  <h3><pre>
+Características:
+
+- Marca: ShopInfo 
+
+
+
+Especificações:
+
+
+
+Processador:  
+
+- AMD Ryzen 5 5500 3.6GHz (4.2GHz Turbo)
+
+  
+
+Placa Mãe:  
+
+- AMD A320M
+
+  
+
+Placa de Vídeo:  
+
+- Galax GeForce RTX 3060 12GB GDDR6
+
+  
+
+Saida Hdmi: Sim 
+
+  
+
+Memória :   
+
+- 16gb DDR4, 3200MHZ
+
+  
+
+Ssd:  
+
+- SSD WD Green 240gb
+
+  
+
+Gabinete:  
+
+- Gabinete Gamer Neologic
+
+  
+  
+
+Tipo de Pc: Gamer 
+
+  
+
+Fonte:  
+
+- Cougar Atlas, 600w, 80 Plus Bronze 
+ 
+
+  
+
+Sistema Operacional:   
+
+- Windows 10 64 Bits
+
+ 
+
+Garantia do Fornecedor:
+
+- A garantia é por peça, o prazo será indicado na nota fiscal.
+  Os computadores não acompanham lacre, portanto poderá abrir seu gabinete e modificar da forma que desejar.
+</pre></h3>
+</table>
+<iframe src="RodapeGame.html" style="border:none;" name="Rodape" height="360px" width="100%" title="Iframe Example"></iframe>
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
+</html>

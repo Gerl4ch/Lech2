@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title> GAMERS.com </title>
+<style>
+body {background-color: lightgrey;}
+h2   {color: black;}
+h1   {color: black;}
+a:link {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: hsl(0, 0%, 60%);";
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727070; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: 2px solid #000; /* Borda preta */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: absolute;
+    left: 873px;
+    top: 686px;
+}
+
+/* Estilo de hover (quando o mouse passa por cima) */
+.botao:hover {
+    background-color: rgba(14, 13, 13, 0.452); /* Altera a cor de fundo no hover */
+}
+</style>
+<body>
+  <iframe src="CabecalhoGame.html" style="border:none;" name="Cabecalho" height="350px" width="100%" title="Iframe Example"></iframe>
+	<table style="width:100%">
+			<td>
+	<h1>Computador Pichau Gamer, Intel i5-10400F, GeForce GTX 1650 4GB, 16GB DDR4, SSD 480GB.
+  </h1>
+</td>
+</table>
+</table>
+<table style="width:100%">
+  <tr>
+    <td>
+  <img src="Pc06.jpg" alt="pc01" style="width:550px;height:500px;">
+  <th><h1>R$2.849,00</h1>
+    <h3>A vista no pix com até 15% off<br>
+      R$3.352,82<br>
+      Em até 12x de R$279,40 sem juros no cartão</h3><br>
+      <div align="center">
+        <strong>R$2.849,00</strong><br>
+       qtd: <input type="number" value="1" min="1" max="10" id="qtd6">
+       <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('PC Pichau Gamer', document.getElementById('qtd6').value, '2849.00', 6)"> Comprar </button>
+     </div>
+     <p align="center">
+       <a href="carrinho.html"> Ver Carrinho de compras </a>
+     </p>	
+    <h2>Exclusivo Pichau: busque a vitória!<br>
+A linha de pcs gamer Pichau são produtos de alta qualidade com muita inovação e preços incríveis, e foi feita para usuários que querem o melhor custo-benefício e a tecnologia mais atual. Contando com a qualidade inigualável dos nossos parceiros, essa maquina vai proporcionar uma experiência fantástica dentro e fora dos games. Uma pedida ideal para quem quer o melhor!
+</h2>
+  </th>
+</td>
+</tr>
+</table>
+<table style="width:100%">
+  <tr>
+  <h1>Informações Técnicas</h1>
+  <h3><pre>
+Características:
+
+- Marca: Pichau 
+
+
+
+Especificações:
+
+
+
+Processador:  
+
+- Intel Core i5-10400F, 2.9Ghz (4.3Ghz Turbo), Cache 12MB
+
+  
+
+Placa Mãe:  
+
+- Pichau Alphard B560M-T, DDR4, Socket LGA1200
+
+  
+
+Placa de Vídeo:  
+
+- Galax GeForce GTX 1650 EX Plus 4GB GDDR6
+
+  
+
+Saida Hdmi: Sim 
+
+  
+
+Memória :   
+
+- 2 x ADATA XPG Gammix D10 8GB (1x8) DDR4 3200MHz
+
+  
+
+Ssd:  
+
+- SSD Pichau Rover, 512GB, M.2 2280
+
+  
+
+Gabinete:  
+
+- Gabinete Gamer Pichau Pulsar, RGB, Lateral de Vidro, Branco 
+
+  
+  
+
+Tipo de Pc: Gamer 
+
+  
+
+Fonte:  
+
+- Mancer Thunder 500W, 80 Plus Bronze
+ 
+
+  
+
+Sistema Operacional:   
+
+- Windows 10 64 Bits
+
+ 
+
+Garantia do Fornecedor:
+
+- A garantia é por peça, o prazo será indicado na nota fiscal.
+  Os computadores não acompanham lacre, portanto poderá abrir seu gabinete e modificar da forma que desejar.
+</pre></h3>
+</table>
+<iframe src="RodapeGame.html" style="border:none;" name="Rodape" height="360px" width="100%" title="Iframe Example"></iframe>
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title> GAMERS.com </title>
+<style>
+body {background-color: lightgrey;}
+h2   {color: black;}
+h1   {color: black;}
+a:link {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: hsl(0, 0%, 60%);";
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727070; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: 2px solid #000; /* Borda preta */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: absolute;
+    left: 873px;
+    top: 715px;
+}
+
+/* Estilo de hover (quando o mouse passa por cima) */
+.botao:hover {
+    background-color: rgba(14, 13, 13, 0.452); /* Altera a cor de fundo no hover */
+}
+</style>
+<body>
+  <iframe src="CabecalhoGame.html" style="border:none;" name="Cabecalho" height="350px" width="100%" title="Iframe Example"></iframe>
+	<table style="width:100%">
+			<td>
+	<h1>PC Gamer Completo Fácil I7, 16GB, GTX 1050TI 4GB, 1TB, Windows 10, Preto + Monitor 21.5 Polegadas+ Kit Gamer Teclado, Mouse E Headset, Fonte 500W</h1>
+</td>
+</table>
+<table style="width:100%">
+	<tr>
+		<td>
+	<img src="Pc02.jpg" alt="pc01" style="width:550px;height:500px;">
+	<th><h1>R$3.459,00</h1>
+    <h3>A vista no pix<br>
+      Em até 10x de R$ 345,90 sem juros no cartão</h3><br>
+      <div align="center">
+        <strong>R$3.459,00</strong><br>
+       qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+       <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('PC Gamer Completo Fácil', document.getElementById('qtd2').value, '3459.00', 2)"> Comprar </button>
+     </div>
+     <p align="center">
+       <a href="carrinho.html"> Ver Carrinho de compras </a>
+     </p>	
+    <h2>Fácil Computadores - Com 30 anos de excelência atuando no Brasil, criamos soluções completas na área de informática. Nossos computadores são equipados com os mais recentes processadores de alta velocidade, maximizando sua produção.</h2>
+  </th>
+</td>
+</tr>
+</table>
+<table style="width:100%">
+  <tr>
+  <h1>Informações Técnicas</h1>
+ <h3><pre> Características:
+- Marca: Fácil Computadores
+
+Monitor:
+- 21.5 POLEGADAS
+- Furação VESA na parte traseira
+- LED
+- RESOLUÇÃO: HD
+
+Conexões:
+- VGA
+- ACOMPANHA CABO
+- HDMI
+
+Gabinete Gamer Black Com Lateral Transparente:
+- Alta Ventilação / Resfriamento dos Componentes
+- Mais estilo e durabilidade, para seu Setup Gamer nunca te deixar para trás nas batalhas!
+- Painel RGB na parte Frontal do Gabinete
+
+Placa Mãe:
+- Placa Mãe: B75M
+- Suporta até: Intel Core i7 / Core i5 / Core i3
+- Áudio - Com HD Audio Codec Onboard
+- Rede: 10/100 Mbps
+- 1x slot PCI Express x16
+- 1x slot PCI Express x1
+
+Conexões:
+- 5x conectores SATA
+- 1 saída VGA - 1x porta RJ-45 de rede
+- 4 portas USB 2.0
+- 2 portas USB 3.0
+- 1 x porta HDMI
+- Jacks de Áudio HD: Linha / Alto falante / Microfone
+
+Processador:
+- Processador: Intel Core i7
+
+Especificações da CPU:
+- Frequência: 3.4 Ghz
+- Frequência turbo max: 3.8 Ghz
+- Número de núcleos: 4
+- Nº de threads: 8
+
+Memória:
+- Tamanho: 16GB
+- Arquitetura da memória: DDR3
+
+Armazenamento:
+- HD: 1TB
+
+Placa de Vídeo:
+- Mecanismo gráfico: NVIDIA GeForce GTX 1050 Ti 4GB DDR5
+- PCI Express X16 padrão
+- Memória de Vídeo: GDDR5 4GB
+- Clock de Memória: 7000 MHz
+- Clock do Núcleo: 1290 MHz
+- Cuda Cores: 768
+- Interface de memória de 128 bits
+- OpenGL: 4.5
+- Resolução Máxima Digital: 7680 x 4320
+- Conexões: 1 x DisplayPort 1.4, 1 x HDMI 2.0b, 1 x DVI
+
+Fonte:
+- Fonte 500W REAL
+- 110/220V - BIVOLT
+
+Sistema Operacional:
+- Windows 10 Trial
+- Pacote Office WPS
+
+Dimensão do Gabinete:
+- Profundidade x Largura x Altura
+- 36cm x 19cm x 42cm
+
+Conteúdo da Embalagem:
+- PC Gamer Completo Fácil I7, 16GB RAM, GTX 1050TI 4GB, HD 1TB
+- Monitor 21.5"
+- Kit Gamer Teclado, Mouse E Headset
+- Fonte 500W
+ 
+
+Garantia do Fornecedor:
+
+12 Meses
+
+
+Peso:
+13000 gramas (bruto com embalagem)</pre></h3>
+
+</tr>
+</table>
+<iframe src="RodapeGame.html" style="border:none;" name="Rodape" height="360px" width="100%" title="Iframe Example"></iframe>
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
+</html>
